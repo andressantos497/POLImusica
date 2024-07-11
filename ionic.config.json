@@ -1,0 +1,7 @@
+{
+  "name": "POLImusica",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
