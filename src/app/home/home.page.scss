@@ -1,6 +1,6 @@
 swiper-container{
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 swiper-slide{
 display: flex;
@@ -11,4 +11,25 @@ justify-content: center;
 
 .vacano {
   color: #3336FF;
+}
+
+.fondo_custom{
+  --background: #c00000;
+}
+
+.swiper_custom{
+  background-color: #2418DA;
+}
+
+//ion-avatar {
+  //--border-radius: 4px;
+//}
+
+.custom_avatar {
+  --border-radius: 160px;
+}
+
+ion-thumbnail{
+  --border-radius:160px;	
+  --size: 30%;
 }
