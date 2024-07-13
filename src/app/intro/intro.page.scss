@@ -1,0 +1,35 @@
+swiper-container{
+    width: 80%;
+    height: 80%;
+  }
+  swiper-slide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .vacano {
+    color: #3336FF;
+  }
+  
+  .fondo_custom{
+    --background: #c00000;
+  }
+  
+  .swiper_custom{
+    background-color: #2418DA;
+  }
+  
+  //ion-avatar {
+    //--border-radius: 4px;
+  //}
+  
+  .custom_avatar {
+    --border-radius: 160px;
+  }
+  
+  ion-thumbnail{
+    --border-radius:160px;	
+    --size: 30%;
+  }
