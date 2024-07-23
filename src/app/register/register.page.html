@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <figure>
+    <img src="assets/images/fotoPerfil.png">
+  </figure>
+  <form [formGroup]="registerForm">
+    <ion-item class="ion-margin-bottom">
+      <ion-input label="Nombre:" placeholder="Escriba Su Nombre" formControlName="name"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-bottom">
+      <ion-input label="Apellido:" placeholder="Escriba Su Apellido" formControlName="Last_name"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-bottom">
+      <ion-input label="Email:" placeholder="Escriba Su Email" formControlName="email"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-bottom">
+      <ion-input label="Contraseña:" placeholder="Escriba Su Contraseña (Minimo 6 caracteres)" formControlName="password"></ion-input>
+    </ion-item>
+
+  </form>
+</ion-content>

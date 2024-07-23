@@ -11,7 +11,7 @@
   <form [formGroup]="loginForm" (ngSubmit)="loginUser(loginForm.value)">
     <ion-item class="ion-margin-bottom">
       <ion-input label="Email:" labelPlacement="Correo Electronico" placeholder="Correo Electronico" formControlName="email"></ion-input>
-    </ion-item>
+    </ion-item> 
 
     <div>
       <ng-container *ngFor="let validation of validation_messages.email">
@@ -23,7 +23,7 @@
     </div>
 
     <ion-item class="ion-margin-bottom">
-      <ion-input type="password" label="Password:" labelPlacement="Contraseña" placeholder="Contraseña" formControlName="password"></ion-input>
+      <ion-input type="password" label="Password:" labelPlacement="Contraseña" placeholder="Contraseña (Minimo 6 caracteres)" formControlName="password"></ion-input>
     </ion-item>
 
     <div>
@@ -34,7 +34,6 @@
         </div>
       </ng-container>
     </div>
-    
 
     <div class="ion-text-center ion-margin-top">
       <ion-button type="submit"
@@ -42,6 +41,13 @@
         Login
       </ion-button>
     </div>
+
+    <div class="ion-text-center ion-margin-top">
+      <ion-button (click)="registrar()">
+       Registrarse
+      </ion-button>
+    </div>
+    
   </form>
 </ion-content>
 
