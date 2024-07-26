@@ -6,8 +6,15 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-    <div class="alinear">
-      <p>Mira quien es él pulsando sobre la imagen</p>
-      <img src="https://wallpapers-clan.com/wp-content/uploads/2024/05/avatar-aang-waterbending-desktop-wallpaper-preview.jpg" (click)="close()" class="imagen" />
-    </div>
+   
+  <h1>Artistas</h1>
+  <swiper-container slides-per-view="4" speed="400">
+    <swiper-slide *ngFor="let artstis of artists">
+      <ion-avatar>
+        <img src="{{artstis.image}}"/>
+        <span>{{artstis.name}}</span>
+      </ion-avatar>
+    </swiper-slide>
+  </swiper-container>
+
   </ion-content>

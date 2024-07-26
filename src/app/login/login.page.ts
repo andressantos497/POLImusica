@@ -53,7 +53,7 @@ validation_messages = {
   this.authService.loginUser(dataLogin).then(res =>{
     this.errorMesage = "";
     this.storage.set("isUserLoggedIn", true);
-    this.navCtrl.navigateForward("/home")
+    this.navCtrl.navigateForward("/menu/home")
   }) .catch(err => {
     this.errorMesage = err;
     this.presentAlert(this.errorMesage);
