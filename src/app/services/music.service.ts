@@ -18,6 +18,12 @@ export class MusicService {
   }
 
   getArtists(){
-    return this.http.get(`${this.urlServer}/artists`, this.httpHeader)
+    //return this.http.get(`${this.urlServer}/artists`, this.httpHeader)
+    return fetch(`${this.urlServer}/artists`).then(
+      response => response.json()
+    )
+  }
+  getArtistTracks(artists_id:number){
+    return this.http.get(`${this.urlServer}/tracks/artist/${artists_id}`, this.httpHeader)
   }
 }
